@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-navbar5-mz5 {
+    padding: 14px 100px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+}
+
+.logo-navbar5-mz5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-navbar5-mz5 img {
+    width: 80px;
+    position: absolute;
+}
+
+.logo-navbar5-mz5 h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.01em;
+    color: #000000;
+}
+
+.content-navbar5-mz5 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.content1-navbar5-mz5 {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content1-navbar5-mz5 li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.content2-navbar5-mz5 {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.content2-navbar5-mz5 li {
+    cursor: pointer;
+}
+
+.dropdown-mz5 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-mz5 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+}
+
+.dropdown-content-mz5 li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content-mz5 li:hover {
+    background-color: lightgrey;
+}
+
+.dropdown-mz5:hover .dropdown-content-mz5 {
+    display: block;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .container-navbar5-mz5 {
+        padding: 30px;
+    }
+
+    .logo-navbar5-mz5 img {
+        transform: scale(0.9);
+        position: relative;
+        top: -8px;
+    }
+
+    .logo-navbar5-mz5 h1 {
+        font-size: 16px;
+    }
+
+    .content1-navbar5-mz5 {
+        display: none;
+    }
+
+    .content2-navbar5-mz5 {
+        gap: 30px;
+    }
+
+    .content2-navbar5-mz5 li:first-of-type {
+        display: none;
+    }
+}
