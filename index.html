@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./assets/styles/navbar.css" />
         <link rel="stylesheet" href="./assets/styles/style.css" />
         <link rel="stylesheet" href="./assets/styles/footer.css" />
+        <script src="./assets/js/counts.js"></script>
         <title>MTS</title>
     </head>
     <body>
@@ -26,27 +27,27 @@
                 <div class="content-navbar5-mz5">
                     <ul class="content1-navbar5-mz5">
                         <li>
-                            <a href="#HOME">HOME</a>
+                            <a href="#HOME">| HOME |</a>
                         </li>
                         <li>
-                            <a href="#ABOUT">ABOUT US</a>
+                            <a href="#ABOUT">| ABOUT US |</a>
                         </li>
-                        <li><a href="#PORTOFOLIO">PORTOFOLIOS</a></li>
+                        <li><a href="#PORTOFOLIO">| PORTOFOLIOS |</a></li>
                         <li>
-                            <a href="#PRODUCTS">PRODUCTS</a>
+                            <a href="#PRODUCTS">| PRODUCTS |</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="parallax-container">
+            <div class="parallax-container" id="HOME">
                 <div class="container-hero-bmw">
                     <a
                         href="https://unsplash.com/@alejandroescamilla?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
                     >
                         <img
                             loading="lazy"
-                            src="https://images-builder.vercel.app/img/bgbmw.jpg"
+                            src="./assets/images/heroes.jpg"
                             class="bgnewhero"
                             alt="https://unsplash.com/s/photos/meet?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
                         />
@@ -54,7 +55,7 @@
                     <div class="overlay-bmw"></div>
                     <div class="content-hero-bmw">
                         <h1 class="title-hero-bmw">
-                            <span id="text-animation"></span>
+                            PT. Mandiri Technology Sejahtera | <span id="text-animation"></span>
                         </h1>
                         <p class="text-hero-bmw">
                             We are delivering beautiful digital products
@@ -64,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="section-testimoni-mz1">
+            <div class="section-testimoni-mz1" id="ABOUT">
                 <p class="parag-testi-mz1">What our customer say</p>
                 <h1 class="title-testi-mz1">ABOUT US</h1>
                 <p class="body-testti-mz1">
@@ -80,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="section5-mz1">
+            <div class="section5-mz1" id="PORTOFOLIO">
                 <p class="p-section5-body-mz1">Assets</p>
                 <h1 class="title-section5-mz1">OUR PORTOFOLIO</h1>
                 <p class="p-section5-body-mz1">
@@ -90,69 +91,58 @@
                 </p>
                 <div class="container-card-mz1">
                     <div class="card-section5-left-mz1">
+                        <img src="./assets/images/mockup1.jpg" alt="portofolio">
                         <div class="card-body-mz1">
                             <div>
-                                <h1>Website Design</h1>
-                                <p>
-                                    Lörem ipsum astrobel sar direlig. Kronde est
-                                    konfoni med kelig. Terabel pov astrobel sar
-                                </p>
+                                <h1>Title Porto</h1>
                             </div>
-                            <button>Let's work</button>
                         </div>
                     </div>
                     <div class="card-section-right-mz1">
                         <div class="card-sections2-mz1">
-                            <div class="card-body2-mz1">
-                                <div>
-                                    <h1>Website Design</h1>
-                                    <p>
-                                        Lörem ipsum astrobel sar direlig. Kronde
-                                        est konfoni med kelig. Terabel pov
-                                        astrobel sar
-                                    </p>
-                                </div>
+                        <div class="card-body2-mz1">
+                            <div>
+                                <h1>Title Porto</h1>
                             </div>
+                        </div>
+                        <img src="./assets/images/mockup2.jpg" alt="portofolio">
                         </div>
                         <div class="card-sections3-mz1">
                             <div class="card-body3-mz1">
                                 <div>
-                                    <h1>Website Design</h1>
-                                    <p>
-                                        Lörem ipsum astrobel sar direlig. Kronde
-                                        est konfoni med kelig. Terabel pov
-                                        astrobel sar
-                                    </p>
+                                    <h1>Title Porto</h1>
                                 </div>
                             </div>
+                            <img src="./assets/images/mockup3.jpg" alt="portofolio">
                         </div>
                     </div>
                 </div>
                 <div class="wrapper-percentation">
                     <div>
                         <img src="./assets/icons/projects.svg" alt="" />
-                        <h3>40</h3>
+                        <h3 id="completed-projects">0</h3>
                         <p>PROJECTS COMPLETED</p>
                     </div>
                     <div>
                         <img src="./assets/icons/customers.svg" alt="" />
-                        <h3>2320</h3>
+                        <h3 id="total-customers">0</h3>
                         <p>CUSTOMERS</p>
                     </div>
                     <div>
                         <img src="./assets/icons/products.svg" alt="" />
-                        <h3>134</h3>
+                        <h3 id="total-products">0</h3>
                         <p>PRODUCTS ME</p>
                     </div>
                     <div>
                         <img src="./assets/icons/portofolio.svg" alt="" />
-                        <h3>3</h3>
-                        <p>PORTOFOLIO</p>
+                        <h3 id="portfolio-count">0</h3>
+                        <p>PORTFOLIO</p>
                     </div>
                 </div>
+                
             </div>
 
-            <div class="container-mou">
+            <div class="container-mou" id="PRODUCTS">
                 <h1 class="title-mou">OUR PRODUCTS</h1>
                 <p class="teks-mou">
                     The Nature is Beautifulfind your favorite picture around the
@@ -240,7 +230,9 @@
                         />
                     </div>
                 </div>
-                <button class="btn-form">Show More</button>
+                <a href="./brand.html">
+                    <button class="btn-form">Show More</button>
+                </a>
             </div>
 
             <div class="container-exp">
@@ -535,43 +527,6 @@
                 </div>
             </section>
 
-            <section class="section4-mz2">
-                <h1 class="section4-mz2-title">GET IN TOUCH</h1>
-                <div class="wrapper-form">
-                    <form>
-                        <div class="child-form">
-                            <label for="name">Name</label>
-                            <br />
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="What is Your Name?"
-                            />
-                        </div>
-                        <div class="child-form">
-                            <label for="name">Email</label>
-                            <br />
-                            <input
-                                type="text"
-                                name="email"
-                                placeholder="Enter Your Email...."
-                            />
-                        </div>
-                        <div class="child-form">
-                            <label for="name">Message</label>
-                            <br />
-                            <textarea
-                                type="text"
-                                name="message"
-                                placeholder="Enter Your Message..."
-                            ></textarea>
-                        </div>
-                        <br />
-                        <button class="btn-form">Send Message</button>
-                    </form>
-                </div>
-            </section>
-
             <div class="footer-hdm">
                 <img
                     loading="lazy"
@@ -579,112 +534,52 @@
                     alt="img"
                     class="ornamen-hdm"
                 />
-                <div class="footer-left-hdm">
-                    <img
-                        loading="lazy"
-                        src="https://images-builder.vercel.app/img/logo_hdm.svg"
-                        alt="logo"
-                    />
-                    <div class="wrap-icon-hdm">
-                        <a href="">
-                            <div class="icons-hdm">
-                                <img
-                                    loading="lazy"
-                                    src="https://images-builder.vercel.app/img/ig_hdm.svg"
-                                    alt="icon"
-                                />
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="icons-hdm">
-                                <img
-                                    loading="lazy"
-                                    src="https://images-builder.vercel.app/img/twitter_hdm.svg"
-                                    alt="icon"
-                                />
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="icons-hdm">
-                                <img
-                                    loading="lazy"
-                                    src="https://images-builder.vercel.app/img/ig_hdm.svg"
-                                    alt="icon"
-                                />
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="icons-hdm">
-                                <img
-                                    loading="lazy"
-                                    src="https://images-builder.vercel.app/img/yt_hdm.svg"
-                                    alt="icon"
-                                />
-                            </div>
-                        </a>
-                    </div>
-                </div>
                 <div class="footer-right-hdm">
                     <div class="group-list-hdm">
                         <ul>
-                            <h3>SHORT LINKS</h3>
+                            <h3>PHONE</h3>
                             <a href="">
-                                <li>home</li>
-                            </a>
-                            <a href="">
-                                <li>services</li>
-                            </a>
-                            <a href="">
-                                <li>screenshoot</li>
-                            </a>
-                            <a href="">
-                                <li>contact</li>
+                                <li><img src="./assets/icons/mobile.svg" alt="icon" /> 08158971348</li>
+                                <li><img src="./assets/icons/phone.svg" alt="icon" /> PHONE: 021-566 8707</li>
                             </a>
                         </ul>
                     </div>
                     <div class="group-list-hdm">
                         <ul>
-                            <h3>HELP LINKS</h3>
+                            <h3>EMAIL</h3>
                             <a href="">
-                                <li>home</li>
+                                <li><img src="./assets/icons/email.svg" alt="icon" /> thomas@berkat-anugrah.net</li>
                             </a>
                             <a href="">
-                                <li>services</li>
-                            </a>
-                            <a href="">
-                                <li>screenshoot</li>
-                            </a>
-                            <a href="">
-                                <li>contact</li>
+                                <li><img src="./assets/icons/email.svg" alt="icon" /> sales@berkat-anugrah.net</li>
                             </a>
                         </ul>
                     </div>
                     <div class="group-list-hdm">
                         <ul>
-                            <h3>SHORT LINKS</h3>
+                            <h3>ADDRESS</h3>
                             <a href="">
-                                <li>home</li>
-                            </a>
-                            <a href="">
-                                <li>services</li>
-                            </a>
-                            <a href="">
-                                <li>screenshoot</li>
-                            </a>
-                            <a href="">
-                                <li>contact</li>
+                                <li>
+                                    <img src="./assets/icons/location.svg" alt="icon" />
+                                    JL Tanjung Duren Raya No.4 Kav 373
+                                    Jakarta – Barat 11470
+                                </li>
                             </a>
                         </ul>
                     </div>
                 </div>
             </div>
 
+        <script src="./assets/js/navbar.js"></script>
+
         <script>
             const titleElement = document.querySelector(".title-hero-bmw");
             const textElement = document.getElementById("text-animation");
             const textArray = [
-                "PT. Mandiri Technology Sejahtera",
-                "Providing solutions for IT needs",
+                "Support",
+                "Security",
+                "Solution",
+                "Provider",
             ];
             let textIndex = 0;
 
