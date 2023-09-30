@@ -16,7 +16,7 @@
     padding: 0px 60px;
     margin-top: 30px;
     display: flex;
-    background-color: #000848;
+    background-color: var(--primary);
     align-items: center;
 }
 
