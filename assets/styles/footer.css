@@ -12,12 +12,15 @@
     position: relative;
     width: 100vw;
     overflow: hidden;
-    height: 420px;
+    height: 330px;
     padding: 0px 60px;
     margin-top: 30px;
     display: flex;
+    flex-direction: column;
     background-color: var(--primary);
     align-items: center;
+    justify-content: center;
+    clip-path: polygon(30% 8%, 75% 0%, 100% 10%, 100% 100%, 0 100%, 0 0);
 }
 
 .wrap-icon-hdm {
@@ -59,9 +62,14 @@
     justify-content: center;
 }
 
-.group-list-hdm {
-    width: 33%;
+.group-list-hdm:nth-child(2), .group-list-hdm:nth-child(3) {
+    width: 38%;
     color: white;
+}
+
+.group-list-hdm:nth-child(1) {
+    color: white;
+    width: 22%;
 }
 
 .group-list-hdm img {
@@ -104,6 +112,18 @@
     left: 0;
     bottom: 0px;
     z-index: 1;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 @media screen and (max-width: 756px) {

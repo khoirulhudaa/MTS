@@ -4,7 +4,7 @@
     overflow: hidden;
     position: relative;
     height: max-content;
-    margin: 50px 0 30px 0;
+    margin: 50px 0 0px 0;
     padding: 30px 60px;
 }
 
@@ -63,12 +63,11 @@
 }
 
 .wrap-bottom-exp {
-    width: 92vw;
+    width: 100vw;
     padding-bottom: 50px;
-    display: flex;
     transition: 1s;
     flex-wrap: wrap;
-    overflow: auto;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -77,10 +76,9 @@
 }
 
 .card-exp {
-    width: 23%;
+    width: 20%;
     margin-bottom: 60px;
     height: max-content;
-    margin-right: 20px;
     border-radius: 20px;
     overflow: hidden;
     background-color: white;
