@@ -146,6 +146,10 @@ html {
 }
 
 @media screen and (max-width: 750px) {
+    .container-hero-bmw {
+        height: 90vh;
+    }
+
     .content-hero-bmw {
         margin-left: auto;
         margin-right: auto;
@@ -160,8 +164,8 @@ html {
     .title-hero-bmw {
         margin-left: auto;
         margin-right: auto;
-        font-size: 3em;
-        width: 60%;
+        font-size: 34px;
+        width: 90%;
         color: white;
         line-height: 1.4em;
         margin-bottom: 14px;
@@ -184,13 +188,19 @@ html {
         justify-content: center;
         cursor: pointer;
         margin-left: auto;
+        font-size: 14px;
         margin-right: auto;
         width: max-content;
         height: max-content;
         border-radius: 1000000px;
-        padding: 15px 30px;
+        padding: 15px 20px;
         margin-top: 32px;
         transition: 0.4s;
+    }
+
+    .container-hero-bmw img {
+        filter: brightness(80%);
+        width: auto;
     }
 }
 
@@ -266,7 +276,13 @@ html {
     }
 
     .body-testti-mz1 {
-        font-size: 25px;
+        font-size: 16px;
+        line-height: 2em;
+        width: 90vw;
+    }
+
+    .title-testi-mz1 {
+        font-size: 34px;
     }
 }
 
@@ -504,6 +520,29 @@ html {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
+    .wrapper-percentation {
+        position: relative;
+        width: 100vw;
+        height: max-content;
+        padding: 50px 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background-color: var(--primary);
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .wrapper-percentation div {
+        width: 100%;
+        margin-bottom: 50px;
+        border-bottom: 1px solid white;
+        padding-bottom: 50px;
+    }
+
     .section5-mz1 {
         padding: 26px 30px;
         display: flex;
@@ -511,10 +550,16 @@ html {
         justify-content: center;
         align-items: center;
         gap: 15px;
+        margin-top: 50px;
+    }
+
+    .title-section5-mz1 {
+        font-size: 32px;
     }
 
     .container-card-mz1 {
         flex-direction: column;
+        margin-top: 0;
     }
 
     .card-section5-left-mz1 {
@@ -528,9 +573,13 @@ html {
     }
 
     .card-body-mz1 {
-        left: 20px;
+        left: -50px;
         bottom: 40px;
         flex-direction: column;
+    }
+
+    .card-body2-mz1 {
+        left: 20px;
     }
 
     .card-sections2-mz1 {
@@ -640,6 +689,10 @@ html {
 }
 
 @media screen and (max-width: 756px) {
+    .container-mou {
+        padding: 0 0px;
+    }
+
     .container-mou .title-mou {
         font-size: 36px;
         font-weight: bold;
@@ -755,11 +808,33 @@ html {
 
 @media only screen and (min-width: 320px) and (max-width: 1007px) {
     .container7-sponsor-mz2 {
-        grid-template-columns: auto auto;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .section7-mz2 {
         padding: 30px 50px;
+    }
+
+    .section7-mz2 {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 30px;
+        margin-bottom: 70px;
+        margin-top: 80px;
+        background-color: var(--primary);
+        clip-path: none;
+    }
+
+    .section7-mz2 h1 {
+        margin-top: 30px;
+    }
+
+    .section7-mz2 img {
+        width: 80px;
     }
 }
 
@@ -862,34 +937,6 @@ html {
 
 .dropdown-mz5:hover .dropdown-content-mz5 {
     display: block;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 576px) {
-    .container-navbar5-mz5 {
-        padding: 30px;
-    }
-
-    .logo-navbar5-mz5 img {
-        transform: scale(0.9);
-        position: relative;
-        top: -8px;
-    }
-
-    .logo-navbar5-mz5 h1 {
-        font-size: 16px;
-    }
-
-    .content1-navbar5-mz5 {
-        display: none;
-    }
-
-    .content2-navbar5-mz5 {
-        gap: 30px;
-    }
-
-    .content2-navbar5-mz5 li:first-of-type {
-        display: none;
-    }
 }
 
 .conatiner-section3-section3mz4 {
@@ -1047,14 +1094,14 @@ html {
     width: 470px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 300px) and (max-width: 576px) {
     .section3-left-section3mz4 {
         width: 96%;
     }
 
     .conatiner-section3-section3mz4 {
         flex-direction: column;
-        padding: 30px;
+        padding: 60px 30px 30px 30px;
         gap: 30px;
     }
 
@@ -1065,7 +1112,18 @@ html {
     }
 
     .section3-title-section3mz4 {
-        font-size: 50px;
+        font-size: 34px;
+        width: 100%;
+        line-height: 140%;
+    }
+
+    .section3-body-section3mz4 {
+        font-size: 15px;
+        width: 94%;
+    }
+
+    .title-exp {
+        font-size: 16px;
     }
 
     .section3-input-section3mz4 {
@@ -1098,6 +1156,10 @@ html {
     .image-section3-section3mz4 img {
         width: 360px;
         height: auto;
+    }
+
+    .wrap-bottom-exp {
+        padding-right: 0;
     }
 }
 
@@ -1302,6 +1364,7 @@ html {
 @media only screen and (min-width: 320px) and (max-width: 1007px) {
     .section4-mz2 {
         width: 92%;
+        margin-top: 0px;
     }
 
     .section4-bottom button {
@@ -1505,15 +1568,25 @@ html {
 
 @media screen and (max-width: 750px) {
     .container-exp {
-        padding: 30px;
+        padding: 0px;
     }
 
     .top-exp {
         display: block;
+        text-align: center;
     }
 
     .top-right-exp {
-        margin-left: -38px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-exp {
+        border: 1px solid black;
     }
 
     .top-right-exp div {
@@ -1523,9 +1596,10 @@ html {
     }
 
     .card-exp {
-        width: 42vw;
-        height: 370px;
-        margin-right: 25px;
+        width: 100vw;
+        height: 280px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .rating-exp {
@@ -1538,6 +1612,11 @@ html {
 
     .card-top-exp {
         height: 65%;
+    }
+
+    .card-top-exp img {
+        width: 100%;
+        height: auto;
     }
 
     .card-bottom-exp {
@@ -1653,11 +1732,15 @@ section4-btn-section4mz4:hover {
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
     .container-section4-section4mz4 {
-        padding: 30px;
+        padding: 60px 30px 30px 30px;
     }
 
     .section4-title-section4mz4 {
-        font-size: 50px;
+        font-size: 35px;
+    }
+
+    .section4-body-section4mz4 {
+        font-size: 16px;
     }
 
     .section4-galerry-section4mz4 {
@@ -1819,6 +1902,16 @@ section4-btn-section4mz4:hover {
 @media only screen and (min-width: 320px) and (max-width: 1007px) {
     .section4-mz2 {
         width: 92%;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .section4-mz2-title {
+        font-size: 32px;
+    }
+
+    .section4-mz2-paragh {
+        font-size: 14px;
     }
 
     .section4-bottom button {

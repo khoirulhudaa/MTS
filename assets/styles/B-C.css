@@ -1,4 +1,3 @@
-
 .container-exp {
     width: 100vw;
     overflow: hidden;
@@ -160,7 +159,8 @@
 
 @media screen and (max-width: 750px) {
     .container-exp {
-        padding: 30px;
+        padding: 0px;
+        width: 100vw;
     }
 
     .top-exp {
@@ -175,12 +175,6 @@
         width: 50px;
         height: 50px;
         margin-top: 20px;
-    }
-
-    .card-exp {
-        width: 42vw;
-        height: 370px;
-        margin-right: 25px;
     }
 
     .rating-exp {
@@ -207,5 +201,25 @@
         width: 94%;
         font-size: 14px;
         margin-bottom: 20px;
+    }
+
+    .wrap-bottom-exp {
+        padding-right: 0;
+        width: 100vw;
+    }
+
+    .title-exp {
+        font-size: 28px;
+    }
+
+    .card-exp {
+        width: 88vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-top-exp img {
+        width: 100%;
+        height: auto;
     }
 }
