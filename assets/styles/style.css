@@ -1,6 +1,6 @@
 :root {
     --primary: #0069b3;
-    --secondaryOrange: #DE5D0C;
+    --secondaryOrange: #de5d0c;
     --secondaryBlue: #024a7b;
 }
 
@@ -19,7 +19,7 @@ html {
 #text-animation::before {
     position: absolute;
     left: 0;
-    content: '';
+    content: "";
     display: block;
     background-color: white;
     width: 100%;
@@ -1994,4 +1994,25 @@ section4-btn-section4mz4:hover {
         display: flex;
         animation: slide 45s linear infinite;
     }
+}
+
+.legend {
+    display: flex;
+    width: 100vw;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.legend p {
+    font-weight: bold;
+    margin: 0 20px;
+    font-size: 18px;
+    color: var(--secondaryOrange)
+}
+
+.legend div {
+    width: 40%;
+    height: 3px;
+    background-color: var(--secondaryOrange);
 }
