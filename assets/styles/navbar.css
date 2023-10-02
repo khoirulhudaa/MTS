@@ -15,8 +15,9 @@
 }
 
 .container-navbar5-mz5 {
-    padding: 14px 100px;
+    padding: 44px 100px;
     display: flex;
+    height: 60px;
     width: 100vw;
     position: fixed;
     box-shadow: 10px 9px 52px 0px rgba(107, 107, 107, 0.342);
@@ -36,7 +37,7 @@
 }
 
 .logo-navbar5-mz5 img {
-    width: 80px;
+    width: 120px;
     cursor: pointer;
     position: absolute;
     transition: 0.2s;
@@ -146,8 +147,8 @@
     }
 
     .logo-navbar5-mz5 img {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
         position: absolute;
         left: 30px;
     }
