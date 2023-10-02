@@ -1112,7 +1112,7 @@ html {
     }
 
     .section3-title-section3mz4 {
-        font-size: 34px;
+        font-size: 38px;
         width: 100%;
         line-height: 140%;
     }
@@ -1596,10 +1596,9 @@ html {
     }
 
     .card-exp {
-        width: 100vw;
+        width: 65vw;
         height: 280px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 8px 0 34px;
     }
 
     .rating-exp {
