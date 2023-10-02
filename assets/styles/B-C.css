@@ -1,3 +1,9 @@
+:root {
+    --primary: #0069b3;
+    --secondaryOrange: #DE5D0C;
+    --secondaryBlue: #024a7b;
+}
+
 .container-exp {
     width: 100vw;
     overflow: hidden;

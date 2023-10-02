@@ -49,7 +49,11 @@
         />
 
         <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-        <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon"> 
+        <link
+            rel="icon"
+            href="./assets/favicon/favicon.ico"
+            type="image/x-icon"
+        />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./assets/styles/navbar.css" />
@@ -118,7 +122,8 @@
                         </button>
                     </a>
                     <h1 class="section3-title-section3mz4">
-                        Creator of today's great and modern products
+                        Creator of today's great and
+                        <span id="text-animation"></span> products
                     </h1>
                     <p class="section3-body-section3mz4">
                         Herox helps businesses in Africa get paid by anyone,
@@ -145,7 +150,7 @@
                             <a href="./category.html">
                                 <div class="card-top-exp">
                                     <img
-                                        src="./assets/images/nike.png"
+                                        src="./assets/images/nike2.png"
                                         alt="card-image"
                                     />
                                 </div>
@@ -160,7 +165,7 @@
                             <a href="./category.html">
                                 <div class="card-top-exp">
                                     <img
-                                        src="./assets/images/nike.png"
+                                        src="./assets/images/nike2.png"
                                         alt="card-image"
                                     />
                                 </div>
@@ -175,7 +180,7 @@
                             <a href="./category.html">
                                 <div class="card-top-exp">
                                     <img
-                                        src="./assets/images/nike.png"
+                                        src="./assets/images/nike2.png"
                                         alt="card-image"
                                     />
                                 </div>
@@ -190,7 +195,7 @@
                             <a href="./category.html">
                                 <div class="card-top-exp">
                                     <img
-                                        src="./assets/images/nike.png"
+                                        src="./assets/images/nike2.png"
                                         alt="card-image"
                                     />
                                 </div>
@@ -205,7 +210,7 @@
                             <a href="./category.html">
                                 <div class="card-top-exp">
                                     <img
-                                        src="./assets/images/nike.png"
+                                        src="./assets/images/nike2.png"
                                         alt="card-image"
                                     />
                                 </div>
@@ -220,7 +225,7 @@
                             <a href="./category.html">
                                 <div class="card-top-exp">
                                     <img
-                                        src="./assets/images/nike.png"
+                                        src="./assets/images/nike2.png"
                                         alt="card-image"
                                     />
                                 </div>
@@ -235,7 +240,7 @@
                             <a href="./category.html">
                                 <div class="card-top-exp">
                                     <img
-                                        src="./assets/images/nike.png"
+                                        src="./assets/images/nike2.png"
                                         alt="card-image"
                                     />
                                 </div>
@@ -250,7 +255,7 @@
                             <a href="./category.html">
                                 <div class="card-top-exp">
                                     <img
-                                        src="./assets/images/nike.png"
+                                        src="./assets/images/nike2.png"
                                         alt="card-image"
                                     />
                                 </div>
@@ -329,6 +334,50 @@
             </div>
         </a>
         <script src="./assets/js/navbar.js"></script>
+
+        <script>
+            const titleElement = document.querySelector(".title-hero-bmw");
+            const textElement = document.getElementById("text-animation");
+            const textArray = ["modern", "best", "quality"];
+            let textIndex = 0;
+
+            function animateText() {
+                textElement.textContent = "";
+                let text = textArray[textIndex];
+                let charIndex = 0;
+
+                function typeChar() {
+                    if (charIndex < text.length) {
+                        textElement.textContent += text.charAt(charIndex);
+                        charIndex++;
+                        setTimeout(typeChar, 100); // Waktu penundaan antara setiap karakter (ms)
+                    } else {
+                        setTimeout(eraseText, 2000); // Tahan teks selama 2 detik sebelum menghapusnya
+                    }
+                }
+
+                function eraseText() {
+                    if (textElement.textContent.length > 0) {
+                        textElement.textContent = textElement.textContent.slice(
+                            0,
+                            -1
+                        );
+                        setTimeout(eraseText, 50); // Waktu penundaan antara penghapusan karakter (ms)
+                    } else {
+                        // Ganti indeks teks ke teks berikutnya dalam array
+                        textIndex = (textIndex + 1) % textArray.length;
+                        setTimeout(animateText, 1000); // Tahan selama 1 detik sebelum animasi berikutnya
+                    }
+                }
+
+                typeChar();
+            }
+
+            window.addEventListener("DOMContentLoaded", () => {
+                // Mulai animasi pergantian teks ketika DOM telah dimuat
+                animateText();
+            });
+        </script>
 
         <script>
             // Temukan elemen gambar dengan ID "logo"

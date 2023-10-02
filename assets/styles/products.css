@@ -1,6 +1,6 @@
 :root {
     --primary: #0069b3;
-    --secondaryOrange: #de5d0c;
+    --secondaryOrange: #DE5D0C;
     --secondaryBlue: #024a7b;
 }
 
@@ -359,7 +359,7 @@
     list-style: none;
     margin: 10px 0;
     font-weight: normal;
-    color: rgb(136, 136, 136);
+    color: var(--secondaryOrange);
 }
 
 .section-tabs {
