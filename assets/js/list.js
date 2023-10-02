@@ -6,6 +6,9 @@ gridButton.addEventListener('click', function() {
     // Mengubah class names untuk tampilan "grid"
     productList.classList.remove('wrapper-list-products');
     productList.classList.add('wrapper-list-products-block');
+    
+    gridButton.style.backgroundColor = '#b5e0ff'
+    blockButton.style.backgroundColor = 'white'
 
     const childProductBlocks = document.querySelectorAll('.child-product');
     const childLeftBlocks = document.querySelectorAll('.child-product-left');
@@ -31,6 +34,9 @@ blockButton.addEventListener('click', function() {
     // Mengubah class names untuk tampilan "block"
     productList.classList.remove('wrapper-list-products-block');
     productList.classList.add('wrapper-list-products');
+    
+    blockButton.style.backgroundColor = '#b5e0ff'
+    gridButton.style.backgroundColor = 'white'
 
     const childProductBlock = document.querySelectorAll('.child-product-block');
     const childProductLeftBlock = document.querySelectorAll('.child-product-left-block');
