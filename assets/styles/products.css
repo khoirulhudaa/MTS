@@ -27,15 +27,21 @@
     justify-content: space-between;
 }
 
+.wrapper-btn-info {
+    display: flex;
+    align-items: center;
+}
+
 .child-info {
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 14px;
     text-align: center;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid rgb(95, 95, 95);
     transition: 0.2s;
     border-radius: 6px;
     transform: rotate(0deg); /* Sudut rotasi saat diklik */
@@ -56,7 +62,11 @@
 }
 
 .child-info img {
-    width: 20px;
+    width: 16px;
+}
+
+.child-info:nth-child(3) img {
+    width: 12px;
 }
 
 .wrapper-list-products {
@@ -65,7 +75,24 @@
     border-radius: 10px;
     box-sizing: border-box;
     margin-top: 32px;
-    height: 1335px;
+    height: max-content;
+    transition: 0.3s;
+    overflow-y: auto;
+}
+
+.wrapper-list-products-block {
+    width: 100%;
+    background-color: rgb(237, 237, 255);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 32px;
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: max-content;
     transition: 0.3s;
     overflow-y: auto;
 }
@@ -93,6 +120,21 @@
     box-sizing: border-box;
     justify-content: space-between;
     margin: 20px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.child-product-block {
+    width: 30%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 10px 10px 20px 10px;
     padding: 0px 20px;
     box-sizing: border-box;
 }
@@ -139,6 +181,60 @@
 .child-product-right p {
     font-size: 14px;
     line-height: 2em;
+    margin-top: 12px;
+    color: rgb(151, 151, 151);
+}
+
+.child-product-left-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.child-product-left-block img {
+    width: auto;
+    height: auto;
+}
+
+.child-product-right-block {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.child-product-right-block h1 {
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.child-product-right-block small {
+    border-radius: 999px;
+    background-color: var(--secondaryOrange);
+    color: white;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    padding: 3px 12px;
+    width: max-content;
+}
+
+.child-product-right-block p,
+.child-product-right-block small,
+.child-product-right-block h4 {
+    font-weight: normal;
+}
+
+.child-product-right-block p {
+    font-size: 14px;
+    line-height: 2em;
+    display: none;
     margin-top: 12px;
     color: rgb(151, 151, 151);
 }
@@ -369,6 +465,10 @@
         padding: 0;
     }
 
+    .child-product-block {
+        width: 100%;
+    }
+
     .wrapper-detail-product {
         margin-bottom: 30px;
     }
@@ -406,8 +506,56 @@
         margin-top: 10px;
         margin-bottom: 14px;
     }
-    
+
     .tab-content p {
         width: 98%;
+    }
+
+    .wrapper-products {
+        padding: 0;
+    }
+
+    .info-list-products {
+        width: 94vw;
+        font-size: 13px;
+    }
+
+    .child-info {
+        display: none;
+    }
+
+    .wrapper-list-products {
+        background-color: transparent;
+        height: max-content;
+    }
+
+    .child-product {
+        flex-direction: column;
+        margin: 0 0 30px 0;
+        width: 100%;
+        border: 1px solid rgb(199, 199, 199);
+    }
+
+    .child-product-left {
+        width: 100%;
+        border: none;
+    }
+
+    .child-product-right {
+        width: 100%;
+        border: none;
+        padding: 14px;
+    }
+
+    .child-product-right p {
+        width: 96%;
+    }
+
+    .child-product-right h4 {
+        font-weight: bold;
+    }
+
+    #block, #grid {
+        display: none;
     }
 }
