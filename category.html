@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-       
         <!-- HTML Meta Tags -->
         <title>Mandiri Technology Sejahtera</title>
-        <meta name="description" content="A System Integrator company established in September 2007 specializes in the development of IT network infrastructure and security systems.">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta
+            name="description"
+            content="A System Integrator company established in September 2007 specializes in the development of IT network infrastructure and security systems."
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
 
         <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="https://mandiri-technology-sejahtera.vercel.app/index.html">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Mandiri Technology Sejahtera">
-        <meta property="og:description" content="A System Integrator company established in September 2007 specializes in the development of IT network infrastructure and security systems.">
-        <meta property="og:image" content="https://raw.githubusercontent.com/khoirulhudaa/MTS/main/assets/images/logoIcon.png">
+        <meta
+            property="og:url"
+            content="https://mandiri-technology-sejahtera.vercel.app/index.html"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Mandiri Technology Sejahtera" />
+        <meta
+            property="og:description"
+            content="A System Integrator company established in September 2007 specializes in the development of IT network infrastructure and security systems."
+        />
+        <meta
+            property="og:image"
+            content="https://raw.githubusercontent.com/khoirulhudaa/MTS/main/assets/images/logoIcon.png"
+        />
 
         <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta property="twitter:domain" content="mandiri-technology-sejahtera.vercel.app">
-        <meta property="twitter:url" content="https://mandiri-technology-sejahtera.vercel.app/index.html">
-        <meta name="twitter:title" content="Mandiri Technology Sejahtera">
-        <meta name="twitter:description" content="A System Integrator company established in September 2007 specializes in the development of IT network infrastructure and security systems.">
-        <meta name="twitter:image" content="https://raw.githubusercontent.com/khoirulhudaa/MTS/main/assets/images/logoIcon.png">
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            property="twitter:domain"
+            content="mandiri-technology-sejahtera.vercel.app"
+        />
+        <meta
+            property="twitter:url"
+            content="https://mandiri-technology-sejahtera.vercel.app/index.html"
+        />
+        <meta name="twitter:title" content="Mandiri Technology Sejahtera" />
+        <meta
+            name="twitter:description"
+            content="A System Integrator company established in September 2007 specializes in the development of IT network infrastructure and security systems."
+        />
+        <meta
+            name="twitter:image"
+            content="https://raw.githubusercontent.com/khoirulhudaa/MTS/main/assets/images/logoIcon.png"
+        />
 
         <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-        
+
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./assets/styles/navbar.css" />
         <link rel="stylesheet" href="./assets/styles/style.css" />
@@ -56,13 +82,12 @@
 
             <div class="container-navbar5-mz5">
                 <div class="logo-navbar5-mz5">
-                    <a href="./index.html">
-                        <img
-                            loading="lazy"
-                            src="./assets/images/logo.jpg"
-                            alt="logo"
-                        />
-                    </a>
+                    <img
+                        loading="lazy"
+                        src="./assets/images/logo.jpg"
+                        alt="logo"
+                        id="logo"
+                    />
                 </div>
                 <div class="btn-toggle" id="btn-toggle">
                     <div></div>
@@ -295,6 +320,15 @@
 
         <script src="./assets/js/navbar.js"></script>
         <script>
+            // Temukan elemen gambar dengan ID "logo"
+            const logoImage = document.getElementById("logo");
+
+            // Tambahkan event listener untuk mengarahkan ke halaman lain saat gambar diklik
+            logoImage.addEventListener("click", function () {
+                // Mengarahkan ke halaman index.html
+                window.location.href = "./index.html";
+            });
+
             const menuContainer = document.querySelector(".bottom-exp");
             const leftButton = document.querySelector(".arrow-exp.left-exp");
             const rightButton = document.querySelector(".arrow-exp.right-exp");

@@ -54,13 +54,12 @@
 
             <div class="container-navbar5-mz5">
                 <div class="logo-navbar5-mz5">
-                    <a href="./index.html">
-                        <img
-                            loading="lazy"
-                            src="./assets/images/logo.jpg"
-                            alt="logo"
-                        />
-                    </a>
+                    <img
+                        loading="lazy"
+                        src="./assets/images/logo.jpg"
+                        alt="logo"
+                        id="logo"
+                    />
                 </div>
                 <div class="btn-toggle" id="btn-toggle">
                     <div></div>
@@ -679,6 +678,15 @@
         <script src="./assets/js/navbar.js"></script>
         
         <script>
+            // Temukan elemen gambar dengan ID "logo"
+            const logoImage = document.getElementById('logo');
+
+            // Tambahkan event listener untuk mengarahkan ke halaman lain saat gambar diklik
+            logoImage.addEventListener('click', function() {
+                // Mengarahkan ke halaman index.html
+                window.location.href = './index.html';
+            });
+
             const titleElement = document.querySelector(".title-hero-bmw");
             const textElement = document.getElementById("text-animation");
             const textArray = [
