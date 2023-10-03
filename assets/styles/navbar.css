@@ -38,7 +38,7 @@
 }
 
 .logo-navbar5-mz5 img {
-    width: 150px;
+    width: 160px;
     cursor: pointer;
     position: absolute;
     transition: 0.2s;
@@ -135,6 +135,28 @@
     display: none;
 }
 
+@media screen and (min-width: 1800px) and (max-width: 1930px) {
+    .logo-navbar5-mz5 img {
+        width: 220px;
+    }
+
+    .container-navbar5-mz5 {
+        padding: 44px 100px;
+        display: flex;
+        height: 96px;
+        width: 100vw;
+        position: fixed;
+        box-shadow: 10px 9px 52px 0px rgba(107, 107, 107, 0.342);
+        left: 0;
+        z-index: 444444444;
+        top: 0;
+        background-color: white;
+        justify-content: space-between;
+        overflow: hidden;
+        align-items: center;
+    }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 576px) {
     .container-navbar5-mz5 {
         padding: 20px 10px;
@@ -148,8 +170,8 @@
     }
 
     .logo-navbar5-mz5 img {
-        width: 140px;
-        height: 140px;
+        width: 90px;
+        height: 90px;
         position: absolute;
         left: 30px;
     }
