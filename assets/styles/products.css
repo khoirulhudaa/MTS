@@ -1,6 +1,6 @@
 :root {
     --primary: #0069b3;
-    --secondaryOrange: #DE5D0C;
+    --secondaryOrange: #de5d0c;
     --secondaryBlue: #024a7b;
 }
 
@@ -245,10 +245,18 @@
     margin-top: 120px;
     margin-bottom: 80px;
     margin-left: auto;
+    background-color: rgb(255, 255, 255);
     margin-right: auto;
     height: max-content;
+    border: 1px solid rgb(240, 240, 240);
     padding: 20px;
-    border: 1px solid black;
+    box-shadow: 0px 0.9px 1.8px rgba(0, 0, 0, 0.002),
+        0px 2.1px 4.1px rgba(0, 0, 0, 0.004),
+        0px 3.6px 7.2px rgba(0, 0, 0, 0.005),
+        0px 5.8px 11.4px rgba(0, 0, 0, 0.005),
+        0px 8.9px 17.6px rgba(0, 0, 0, 0.006),
+        0px 13.9px 27.4px rgba(0, 0, 0, 0.007),
+        0px 23px 45.5px rgba(0, 0, 0, 0.008), 0px 46px 91px rgba(0, 0, 0, 0.01);
     border-radius: 12px;
 }
 
@@ -287,7 +295,6 @@
 .child-detail-product {
     width: 96%;
     border-radius: 10px;
-    background-color: white;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -555,7 +562,8 @@
         font-weight: bold;
     }
 
-    #block, #grid {
+    #block,
+    #grid {
         display: none;
     }
 }

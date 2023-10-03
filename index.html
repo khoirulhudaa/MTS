@@ -31,6 +31,15 @@
         <link rel="stylesheet" href="./assets/styles/footer.css" />
         <script src="./assets/js/counts.js"></script>
 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZD0FFFK8J"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-9ZD0FFFK8J');
+        </script>
+
     </head>
     <body>
         <div class="template">
@@ -46,7 +55,7 @@
                     <li>
                         <a href="#ABOUT">ABOUT US</a>
                     </li>
-                    <li><a href="#PORTOFOLIO">PORTOFOLIOS</a></li>
+                    <li><a href="#PORTFOLIO">PORTFOLIOS</a></li>
                     <li>
                         <a href="#PRODUCTS">PRODUCTS</a>
                     </li>
@@ -75,7 +84,7 @@
                         <li>
                             <a href="#ABOUT">| ABOUT US |</a>
                         </li>
-                        <li><a href="#PORTOFOLIO">| PORTOFOLIOS |</a></li>
+                        <li><a href="#PORTFOLIO">| PORTFOLIOS |</a></li>
                         <li>
                             <a href="#PRODUCTS">| PRODUCTS |</a>
                         </li>
@@ -101,7 +110,7 @@
                             CV. Mandiri Technology Sejahtera | <span id="text-animation"></span>
                         </h1>
                         <p class="text-hero-bmw">
-                            We are delivering beautiful digital products
+                            We Delivering the Best Solution for Our Customer    
                         </p>
                         <div class="btn-hero-bmw">DOWNLOAD CATALOG</div>
                     </div>
@@ -114,7 +123,7 @@
                 <p class="body-testti-mz1">
                     A System Integrator company established in September 2021
                     specializes in the development of IT network infrastructure
-                    and security systems. They have a certified team to provide
+                    and security systems. We have a certified team to provide
                     post-sales services, including implementation, on-site
                     support, remote assistance, and phone support. The company
                     combines technical expertise with strong customer service.
@@ -126,14 +135,14 @@
                 </div>
             </div>
 
-            <div class="section5-mz1" id="PORTOFOLIO">
-                <h1 class="title-section5-mz1">OUR PORTOFOLIO</h1>
+            <div class="section5-mz1" id="PORTFOLIO">
+                <h1 class="title-section5-mz1">OUR PORTFOLIO</h1>
                 <p class="p-section5-body-mz1">
                     Some of the best portfolios of our companies available today
                 </p>
                 <div class="container-card-mz1">
                     <div class="card-section5-left-mz1">
-                        <img loading="lazy" src="./assets/images/mockup1.jpg" alt="portofolio">
+                        <img loading="lazy" src="./assets/images/mockup1.jpg" alt="portfolio">
                         <div class="skeleton-image">Loading...</div>
                         <div class="card-body-mz1">
                             <div>
@@ -148,7 +157,7 @@
                                 <h1>Title Porto</h1>
                             </div>
                         </div>
-                        <img loading="lazy" src="./assets/images/mockup2.jpg" alt="portofolio">
+                        <img loading="lazy" src="./assets/images/mockup2.jpg" alt="portfolio">
                         <div class="skeleton-image">Loading...</div>    
                     </div>
                         <div class="card-sections3-mz1">
@@ -157,7 +166,7 @@
                                     <h1>Title Porto</h1>
                                 </div>
                             </div>
-                            <img loading="lazy" src="./assets/images/mockup3.jpg" alt="portofolio">
+                            <img loading="lazy" src="./assets/images/mockup3.jpg" alt="portfolio">
                             <div class="skeleton-image">Loading...</div>
                         </div>
                     </div>
@@ -639,6 +648,14 @@
                     </div>
                     <div class="group-list-hdm">
                         <ul>
+                            <h3>PAGEVIEWS</h3>
+                            <a href="">
+                                <li><img loading="lazy" src="./assets/icons/phone.svg" alt="icon" /> <p><span id="pageviewsCount">Loading...</span></p></li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="group-list-hdm">
+                        <ul>
                             <h3>EMAIL</h3>
                             <a href="">
                                 <li><img loading="lazy" src="./assets/icons/email.svg" alt="icon" /> sales@mandiri-technology-sejahtera.com</li>
@@ -669,6 +686,39 @@
                 </div>
             </a>
 
+
+        <script>
+            gapi.load('client:auth2', function () {
+                gapi.client.init({
+                    apiKey: 'YOUR_API_KEY', // Ganti dengan API Key Anda
+                    clientId: 'YOUR_CLIENT_ID', // Ganti dengan ID Klien OAuth 2.0 Anda
+                    discoveryDocs: ['https://analyticsreporting.googleapis.com/$discovery/rest?version=v4'],
+                    scope: 'https://www.googleapis.com/auth/analytics.readonly'
+                });
+        
+                gapi.client.load('analyticsreporting', 'v4').then(function () {
+                    var request = {
+                        reportRequests: [{
+                            viewId: 'YOUR_VIEW_ID', // Ganti dengan ID Tampilan Google Analytics Anda
+                            dateRanges: [{
+                                startDate: '7daysAgo',
+                                endDate: 'today'
+                            }],
+                            metrics: [{
+                                expression: 'ga:pageviews'
+                            }]
+                        }]
+                    };
+        
+                    gapi.client.analyticsreporting.reports.batchGet(request).then(function (response) {
+                        var pageviews = response.result.reports[0].data.totals[0].values[0];
+                        document.getElementById('pageviewsCount').textContent = pageviews;
+                    });
+                });
+            });
+        </script>
+        <script src="https://apis.google.com/js/client.js?onload=init"></script>
+        
         <script src="./assets/js/slider.js"></script>
         <script>
             var i, acc = document.querySelectorAll("accordion-mz2");
@@ -696,7 +746,6 @@
                 "Support",
                 "Security",
                 "Solution",
-                "Provider",
             ];
             let textIndex = 0;
 
