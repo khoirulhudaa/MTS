@@ -319,19 +319,19 @@ html {
 
 .card-section5-left-mz1 img {
     width: auto;
-    transition: 0.2s;
+    transition: 0.4s;
     height: 100%;
     filter: brightness(70%);
 }
 
 .card-section5-left-mz1 img:hover {
-    transition: 0.2s;
+    transition: 0.4s;
     transform: scale(1.2);
 }
 
 .card-body-mz1 {
     position: absolute;
-    bottom: 100px;
+    bottom: 60px;
     left: 50px;
     right: 40px;
     display: flex;
@@ -370,7 +370,7 @@ html {
 .card-section-right-mz1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 15px;
 }
@@ -387,11 +387,11 @@ html {
     width: 100%;
     height: auto;
     filter: brightness(70%);
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .card-sections2-mz1 img:hover {
-    transition: 0.2s;
+    transition: 0.4s;
     transform: scale(1.2);
 }
 
@@ -432,11 +432,11 @@ html {
     width: 100%;
     height: auto;
     filter: brightness(70%);
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .card-sections3-mz1 img:hover {
-    transition: 0.2s;
+    transition: 0.4s;
     transform: scale(1.2);
 }
 
@@ -567,7 +567,7 @@ html {
 
     .card-section5-left-mz1 {
         width: 320px;
-        height: 350px;
+        height: 252px;
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
@@ -579,6 +579,11 @@ html {
         left: -50px;
         bottom: 40px;
         flex-direction: column;
+    }
+
+    .card-body-mz1 h1 {
+        position: relative;
+        top: -8px;
     }
 
     .card-body2-mz1 {
@@ -621,10 +626,6 @@ html {
         margin-top: 10px;
     }
 
-    .card-section5-left-mz1 {
-        width: 86vw;
-    }
-
     .card-sections2-mz1 {
         width: 86vw;
     }
@@ -635,6 +636,12 @@ html {
 
     .card-sections3-mz1 {
         width: 86vw;
+        margin-top: 6px;
+    }
+
+    .card-sections3-mz1 img {
+        width: auto;
+        height: 100%;
     }
 }
 
@@ -669,7 +676,7 @@ html {
     height: 260px;
     border-radius: 12px;
     margin: 10px;
-    transition: 0.2s;
+    transition: 0.4s;
     background-color: white;
     box-shadow: 2px 2px 1.6px rgba(0, 0, 0, 0.002),
         4.5px 4.5px 3.6px rgba(0, 0, 0, 0.003),
@@ -688,13 +695,13 @@ html {
     width: 100%;
     position: relative;
     z-index: 2222;
-    transition: 0.2s;
+    transition: 0.4s;
     height: 100%;
 }
 
 .wrap-foto-mou .foto-mou:hover img {
     filter: brightness(80%);
-    transition: 0.2s;
+    transition: 0.4s;
     transform: scale(1.1);
 }
 
@@ -786,12 +793,12 @@ html {
     width: 150px;
     margin-bottom: 50px;
     border-radius: 8px;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .container7-sponsor-mz2 img:hover {
     filter: brightness(70%);
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .sopnsor7-mz2 {
@@ -886,12 +893,12 @@ html {
 
 .content1-navbar5-mz5 li {
     margin-left: 35px;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .content1-navbar5-mz5 li:hover > a {
     color: #0041e8;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .content2-navbar5-mz5 {
@@ -962,12 +969,12 @@ html {
 }
 
 .btn-hiring-section3mz4:hover {
-    transition: 0.2s;
+    transition: 0.4s;
     filter: brightness(90%);
 }
 
 .btn-hiring-section3mz4:active {
-    transition: 0.2s;
+    transition: 0.4s;
     transform: scale(0.98);
 }
 
@@ -1101,7 +1108,7 @@ html {
 
     .btn-hiring-section3mz4 {
         margin-bottom: 15px;
-        transition: 0.2s;
+        transition: 0.4s;
         cursor: pointer;
     }
 
@@ -1324,12 +1331,12 @@ html {
 }
 
 .btn-form:hover {
-    transition: 0.2s;
+    transition: 0.4s;
     filter: brightness(90%);
 }
 
 .btn-form:active {
-    transition: 0.2s;
+    transition: 0.4s;
     transform: scale(0.98);
 }
 
@@ -1346,12 +1353,12 @@ html {
 }
 
 .btn-product:hover {
-    transition: 0.2s;
+    transition: 0.4s;
     filter: brightness(90%);
 }
 
 .btn-product:active {
-    transition: 0.2s;
+    transition: 0.4s;
     transform: scale(0.98);
 }
 
@@ -1666,11 +1673,11 @@ html {
     cursor: pointer;
     outline: none;
     border: none;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .section4-btn-section4mz4:hover {
-    transition: 0.2s;
+    transition: 0.4s;
     filter: brightness(88%);
 }
 
@@ -1927,7 +1934,7 @@ section4-btn-section4mz4:hover {
     align-items: center;
     z-index: 9999999;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.4s;
     box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.034),
         6.7px 6.7px 5.3px rgba(0, 0, 0, 0.048),
         12.5px 12.5px 10px rgba(0, 0, 0, 0.06),
@@ -1938,11 +1945,11 @@ section4-btn-section4mz4:hover {
 
 .wa-feature:hover {
     filter: brightness(90%);
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .wa-feature:active {
-    transition: 0.2s;
+    transition: 0.4s;
     transform: scale(0.98);
 }
 
