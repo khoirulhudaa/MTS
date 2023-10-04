@@ -1965,7 +1965,7 @@ section4-btn-section4mz4:hover {
 
 .slider {
     display: flex;
-    animation: slide 55s linear infinite;
+    animation: slide 60s linear infinite;
 }
 
 .slider img {
@@ -1995,7 +1995,7 @@ section4-btn-section4mz4:hover {
 
     .slider {
         display: flex;
-        animation: slide 45s linear infinite;
+        animation: slide 85s linear infinite;
     }
 }
 
