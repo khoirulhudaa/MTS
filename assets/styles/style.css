@@ -750,7 +750,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 30px 120px 30px;
+    padding: 0px 30px 50px 30px;
     margin-bottom: 70px;
     margin-top: 80px;
     background-color: var(--primary);
@@ -763,7 +763,7 @@ html {
     font-size: 36px;
     width: max-content;
     height: 60px;
-    margin-top: 60px;
+    margin-top: 40px;
     line-height: 44px;
     color: #ffffff;
     text-align: center;
@@ -786,7 +786,7 @@ html {
     justify-content: space-around;
     align-items: center;
     gap: 25px;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .container7-sponsor-mz2 img {
@@ -1960,7 +1960,7 @@ section4-btn-section4mz4:hover {
 .slider-container {
     width: max-content;
     overflow: hidden;
-    margin-top: 130px;
+    margin-top: 80px;
 }
 
 .slider {
