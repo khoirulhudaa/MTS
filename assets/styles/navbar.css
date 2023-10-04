@@ -240,15 +240,16 @@
     }
 }
 
-@media screen and (max-width: 14in) {
+@media screen and (min-width: 14in) {
     .logo-navbar5-mz5 img {
-        width: 220px;
+        width: 200px;
+        height: 200px;
         cursor: pointer;
         position: absolute;
         transition: 0.2s;
     }
 
     .container-navbar5-mz5 {
-        height: 96px;
+        height: 75px;
     }
 }
