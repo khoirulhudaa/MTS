@@ -50,7 +50,7 @@
 }
 
 .content1-navbar5-mz5 li.active a {
-    color: var(--primary);
+    color: var(--secondaryOrange);
     background-color: white;
     box-shadow: none;
     text-shadow: none;
@@ -120,7 +120,7 @@
 }
 
 .dropdown-content-mz5 li:hover {
-    background-color: lightgrey;
+    background-color: var(--secondaryOrange);
 }
 
 .dropdown-mz5:hover .dropdown-content-mz5 {

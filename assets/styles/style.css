@@ -1965,13 +1965,21 @@ section4-btn-section4mz4:hover {
 
 .slider {
     display: flex;
+    height: 110px;
     animation: slide 60s linear infinite;
 }
 
-.slider img {
+.slider .unOurCus {
     width: auto;
     height: 100px;
     margin: 0 50px;
+}
+
+.ourCus {
+    width: auto;
+    transform: scale(1.6);
+    height: 100px;
+    margin: 0 80px;
 }
 
 @keyframes slide {
@@ -1987,7 +1995,7 @@ section4-btn-section4mz4:hover {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1007px) {
-    .slider img {
+    .slider .unOurCus {
         width: auto;
         height: 100px;
         margin: 0 20px;
