@@ -205,8 +205,9 @@ html {
     .container-hero-bmw img {
         filter: brightness(80%);
         width: auto;
+        position: absolute;
+        left: -300px;
         height: 100%;
-        margin-left: -300px;
     }
 }
 
