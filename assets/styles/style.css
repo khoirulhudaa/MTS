@@ -123,7 +123,7 @@ html {
 }
 
 .btn-hero-bmw {
-    background-color: var(--primary);
+    background-color: var(--secondaryOrange);
     color: white;
     margin-left: auto;
     margin-right: auto;
@@ -185,7 +185,7 @@ html {
     }
 
     .btn-hero-bmw {
-        background-color: var(--primary);
+        background-color: var(--secondaryOrange);
         color: white;
         display: flex;
         align-items: center;
