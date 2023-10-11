@@ -1978,6 +1978,7 @@ section4-btn-section4mz4:hover {
 .slider {
     display: flex;
     height: 110px;
+    overflow-y: hidden;
     animation: slide 60s linear infinite;
 }
 
